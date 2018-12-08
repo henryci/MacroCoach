@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label7.Text" xml:space="preserve">
-    <value>Like every nub, I thought I my macro was amazing and never the reason for my losses. On a whim I got a coach and having them watch me point out all the times I missed my macro was a rude awakening. Unsurprisingly, I played much better when somebody was watching my macro and so, I wrote some software to watch my keyboard for me. Originally I did this with a series of Autohotkey scripts but now it's a standalone app anybody can run.</value>
+    <value>Like every nub, I thought my macro was amazing and never the reason for my losses. On a whim I got a coach and having them watch me point out all the times I missed my macro was a rude awakening. Unsurprisingly, I played much better when somebody was watching my macro and so, I wrote some software to watch my keyboard for me. Originally I did this with a series of Autohotkey scripts but now it's a standalone app anybody can run.</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
     <value>This app uses text to speech to give you a message if you don't press a button within a certain amount of time. It doesn't touch Starcraft or do any cheaty bullshit. It just makes sure you are pressing buttons. As you play with it running you'll find yourself hearing it less and less and then eventually you can remove it.</value>

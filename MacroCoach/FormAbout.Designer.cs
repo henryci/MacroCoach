@@ -138,7 +138,7 @@
             this.label7.Location = new System.Drawing.Point(14, 92);
             this.label7.MaximumSize = new System.Drawing.Size(500, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(499, 65);
+            this.label7.Size = new System.Drawing.Size(498, 65);
             this.label7.TabIndex = 13;
             this.label7.Text = resources.GetString("label7.Text");
             // 
