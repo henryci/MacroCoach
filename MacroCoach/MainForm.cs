@@ -73,6 +73,8 @@ namespace MacroCoach
             }
 
             LoadSavedSettings();
+
+            this.btnDeleteAlert.Enabled = this.listAlerts.Items.Count > 0;
         }
 
         /// <summary>
@@ -459,6 +461,30 @@ namespace MacroCoach
                 {
                     this.listAlerts.Items.RemoveAt(messageIndex);
                 }
+            }
+        }
+
+        /// <summary>
+        /// If an item from the list is selected. Enable the delete button
+        /// </summary>
+        private void listAlerts_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.btnDeleteAlert.Enabled = this.listAlerts.SelectedIndex > -1;
+        }
+
+        /// <summary>
+        /// Deletes the selected Alert in the list
+        /// </summary>
+        private void btnDeleteAlert_Click(object sender, EventArgs e)
+        {
+            int index = this.listAlerts.SelectedIndex;
+            if(index > -1)
+            {
+                this.listAlerts.Items.RemoveAt(index);
+            }
+            else
+            {
+                showInputErrorMessage("Select an alert to delete");
             }
         }
 

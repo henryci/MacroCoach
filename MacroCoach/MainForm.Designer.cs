@@ -47,6 +47,7 @@
             this.btnStart = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
             this.chkNotifyOnStartStop = new System.Windows.Forms.CheckBox();
+            this.btnDeleteAlert = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numSecondsBetweenAlerts)).BeginInit();
             this.panel1.SuspendLayout();
@@ -60,6 +61,7 @@
             this.listAlerts.Name = "listAlerts";
             this.listAlerts.Size = new System.Drawing.Size(347, 69);
             this.listAlerts.TabIndex = 12;
+            this.listAlerts.SelectedIndexChanged += new System.EventHandler(this.listAlerts_SelectedIndexChanged);
             this.listAlerts.Format += new System.Windows.Forms.ListControlConvertEventHandler(this.listAlerts_Format);
             this.listAlerts.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.listAlerts_PreviewKeyDown);
             // 
@@ -193,7 +195,7 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(13, 312);
+            this.btnStart.Location = new System.Drawing.Point(13, 340);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(141, 33);
             this.btnStart.TabIndex = 6;
@@ -204,7 +206,7 @@
             // btnStop
             // 
             this.btnStop.Enabled = false;
-            this.btnStop.Location = new System.Drawing.Point(214, 312);
+            this.btnStop.Location = new System.Drawing.Point(214, 340);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(141, 33);
             this.btnStop.TabIndex = 7;
@@ -222,11 +224,23 @@
             this.chkNotifyOnStartStop.Text = "Notify on start/stop❓";
             this.chkNotifyOnStartStop.UseVisualStyleBackColor = true;
             // 
+            // btnDeleteAlert
+            // 
+            this.btnDeleteAlert.Enabled = false;
+            this.btnDeleteAlert.Location = new System.Drawing.Point(281, 304);
+            this.btnDeleteAlert.Name = "btnDeleteAlert";
+            this.btnDeleteAlert.Size = new System.Drawing.Size(78, 28);
+            this.btnDeleteAlert.TabIndex = 13;
+            this.btnDeleteAlert.Text = "Delete";
+            this.btnDeleteAlert.UseVisualStyleBackColor = true;
+            this.btnDeleteAlert.Click += new System.EventHandler(this.btnDeleteAlert_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(374, 357);
+            this.ClientSize = new System.Drawing.Size(374, 383);
+            this.Controls.Add(this.btnDeleteAlert);
             this.Controls.Add(this.chkNotifyOnStartStop);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnStart);
@@ -272,6 +286,7 @@
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.CheckBox chkNotifyOnStartStop;
         private System.Windows.Forms.ComboBox comboKeystroke;
+        private System.Windows.Forms.Button btnDeleteAlert;
     }
 }
 
