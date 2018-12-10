@@ -38,7 +38,7 @@ This is how I control it. In fact, the first version of this project was just a 
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ^!t::
-run, C:\Users\henry\apps\MacroTrainer\MacroTrainer.exe action:toggle```
+run, C:\Users\henry\apps\MacroCoach\MacroCoach.exe action:toggle```
 
 ## Misc. other notes
 * The hotkey debugger window will run the keystroke listener and dump the keys it sees to the screen. This can be used if you have
